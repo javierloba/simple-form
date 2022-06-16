@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.wrapper {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    margin: 20px 0 5px 0;
+    text-transform: uppercase;
+    color:rgba(69, 1, 114, 0.797)
+}
+
+.form-control input {
+    padding-left: 10px;
+    height: 2em;
+    border: 1px solid rgba(69, 1, 114, 0.797);
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-control.success input {
+    border-color: rgb(43, 255, 0);
+}
+
+.form-control.error input {
+    border-color: rgb(255, 0, 0);
+}
+
+.form-control textarea {
+    padding: 10px 0 0 10px;
+    border: 1px solid rgba(69, 1, 114, 0.797);
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-control.succes textarea {
+    border-color: rgb(43, 255, 0);
+}
+
+.form-control.error textarea {
+    border-color: rgb(255, 0, 0);
+}
+
+.form-control input:focus, .form-control textarea:focus {
+    outline: 1px solid rgba(69, 1, 114, 0.797);
+}
+
+.form-control p {
+    
+    font-size: 12px;
+    padding-left: 10px;
+    display: none;
+}
+
+.form-control.error p {
+    color: red;
+    display: block;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(69, 1, 114, 0.442);
+    font-family: 'Poppins', sans-serif;
+    opacity: 1; /* Firefox */
+}
+
+button {
+    background-color: rgba(69, 1, 114, 0.797);
+    border: 2px solid #fff;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: rgba(69, 1, 114, 0.797);
+    border: 2px solid rgba(69, 1, 114, 0.797);
+    
+}
